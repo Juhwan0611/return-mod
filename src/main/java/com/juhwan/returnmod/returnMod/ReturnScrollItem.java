@@ -47,7 +47,7 @@ public class ReturnScrollItem extends Item {
                     }
                     Thread.sleep(500); //0.5초 대기
                     if (!player.isRemoved()) {
-                        BlockPos targetPos = new BlockPos(100, 70, 100); // 텔레포트할 좌표
+                        BlockPos targetPos = new BlockPos(24, 73, -33); // 텔레포트할 좌표
                         player.teleport((ServerWorld) world, targetPos.getX(), targetPos.getY(), targetPos.getZ(), player.getYaw(), player.getPitch());
                         player.sendMessage(Text.of("귀환하셨습니다!"), false);
 
